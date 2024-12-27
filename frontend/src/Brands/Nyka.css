@@ -1,0 +1,260 @@
+.nyka-navbar {
+  position: relative; 
+  z-index: 10;
+}
+
+.nyka-slider-container {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.nyka-slider {
+  display: flex;
+  animation: nyka-slide 10s infinite;
+}
+
+.nyka-slide-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 1s ease-in-out;
+}
+
+@keyframes nyka-slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .nyka-slider-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .nyka-slider-container {
+    width: 100%;
+  }
+}
+
+.nyka-alert {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.2em;
+  z-index: 1000; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nyka-product-card {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: visible;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  height: auto;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0px;
+  margin: 10px;
+}
+
+.nyka-product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.nyka-product-card h3 {
+  margin: 10px 0;
+  font-size: 1em;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2em;
+  max-height: 2.4em;
+  white-space: normal;
+}
+
+.nyka-product-card p {
+  margin: 5px 0;
+}
+
+.nyka-product-card .price-original {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.nyka-product-card .price-discounted {
+  font-weight: bold;
+  color: green;
+}
+
+.nyka-product-card .price-off {
+  color: red;
+}
+
+.nyka-product-card .button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nyka-product-card button {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.nyka-product-card .add-to-cart-btn {
+  background-color: #ff5a5f;
+  color: #fff;
+}
+
+.nyka-product-card .add-to-cart-btn:hover {
+  background-color: #e04444;
+}
+
+.nyka-product-card .wishlist-btn i {
+  font-size: 20px;
+  color: gray;
+  transition: color 0.3s ease;
+}
+
+.nyka-product-card .wishlist-btn i.heart-active {
+  color: magenta;
+}
+
+.product-card-container { 
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .product-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 10px;
+  }
+
+  .nyka-product-card {
+    margin: 10px 5px;
+  }
+}
+
+.nyka-product-card {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: visible;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  height: auto;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0px;
+  margin: 10px;
+}
+
+.nyka-product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.nyka-product-card h3 {
+  margin: 10px 0;
+  font-size: 1em;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2em;
+  max-height: 2.4em;
+  white-space: normal;
+}
+
+.nyka-product-card p {
+  margin: 5px 0;
+}
+
+.nyka-product-card .price-original {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.nyka-product-card .price-discounted {
+  font-weight: bold;
+  color: green;
+}
+
+.nyka-product-card .price-off {
+  color: red;
+}
+
+.nyka-product-card .button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nyka-product-card button {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.nyka-product-card .add-to-cart-btn {
+  background-color: #ff5a5f;
+  color: #fff;
+}
+
+.nyka-product-card .add-to-cart-btn:hover {
+  background-color: #e04444;
+}
+
+.nyka-product-card .wishlist-btn i {
+  font-size: 20px;
+  color: gray;
+  transition: color 0.3s ease;
+}
+
+.nyka-product-card .wishlist-btn i.heart-active {
+  color: magenta;
+}

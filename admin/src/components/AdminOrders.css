@@ -1,0 +1,183 @@
+
+.adminorders-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+
+.adminorders-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.adminorders-table-wrapper {
+  overflow-x: auto;
+}
+
+
+.adminorders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.adminorders-table thead {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.adminorders-table thead th {
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.adminorders-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.adminorders-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.adminorders-table tbody tr:hover {
+  background-color: #f1f9ff;
+}
+
+.adminorders-table tbody td {
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+  vertical-align: top;
+}
+
+
+.adminorders-item-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.adminorders-item-list li {
+  margin-bottom: 5px;
+}
+
+
+.adminorders-action-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.adminorders-action-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.adminorders-action-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+
+.adminorders-loading {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .adminorders-container {
+    padding: 15px;
+  }
+
+  .adminorders-title {
+    font-size: 20px;
+  }
+
+  .adminorders-table {
+    border: 0;
+  }
+
+  .adminorders-table thead {
+    display: none;
+  }
+
+  .adminorders-table tbody td {
+    display: block;
+    text-align: center;
+    padding: 10px 5px;
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .adminorders-table tbody td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+  }
+
+  .adminorders-table tbody tr {
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+  .adminorders-item-list {
+    padding-left: 20px; /* Indent items for better readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .adminorders-container {
+    padding: 10px;
+  }
+
+  .adminorders-title {
+    font-size: 18px;
+  }
+
+  .adminorders-table tbody td {
+    font-size: 12px;
+    padding: 8px;
+    text-align: center;
+   
+  }
+
+  .adminorders-table tbody td::before {
+    left: 5px;
+    font-size: 12px;
+   
+  }
+
+  .adminorders-item-list {
+    padding-left: 15px; /* Additional indentation for small screens */
+   
+  }
+}

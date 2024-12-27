@@ -1,0 +1,145 @@
+
+.nav-item.dropdown-brands:hover .dropdown-menu-brands {
+    display: block;
+  }
+  
+  
+  .dropdown-menu-brands {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1000;
+    margin-left: 15px;
+    padding: 15px;
+    width: 500px;
+  }
+  
+ 
+  .nav-item.dropdown-brands:hover .dropdown-menu-brands {
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+  
+ 
+  .brand-logo-brands img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+ 
+  .container-brands .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+  }
+  
+  .col-3-brands {
+    margin-bottom: 15px; 
+    text-align: center;
+  }
+  
+  
+  @media (min-width: 992px) {
+    .dropdown-menu-brands {
+      width: 500px; 
+    }
+  
+    .brand-logo-brands img {
+      width: 150px; 
+    }
+  
+    .col-3-brands {
+      flex: 0 0 22%; 
+    }
+  }
+  
+  
+  @media (max-width: 991px) and (min-width: 768px) {
+    .dropdown-menu-brands {
+      width: 400px;
+    }
+  
+    .brand-logo-brands img {
+      width: 120px; 
+    }
+  
+    .col-3-brands {
+      flex: 0 0 30%; 
+    }
+  }
+  
+ 
+  @media (max-width: 767px) {
+    .dropdown-menu-brands {
+      width: 300px;
+    }
+  
+    .brand-logo-brands img {
+      width: 100px;
+    }
+  
+    .col-3-brands {
+      flex: 0 0 48%;
+    }
+  
+   
+    .nav-item.dropdown-brands.show .dropdown-menu-brands {
+      display: block;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .dropdown-menu-brands {
+      width: 250px; 
+    }
+  
+    .brand-logo-brands img {
+      width: 80px; 
+    }
+  
+    .col-3-brands {
+      flex: 0 0 100%; 
+    }
+  }
+  
+
+
+  
+.nav-item.dropdown-brands:hover .dropdown-menu-brands {
+    display: block;
+  }
+  
+  
+  .dropdown-menu-brands {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1000;
+    margin-left: 15px;
+    padding: 15px;
+    width: 500px;
+  }
+  
+  
+  .nav-item.dropdown-brands:hover .dropdown-menu-brands {
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  
+  @media (max-width: 767px) {
+    .nav-item.dropdown-brands .dropdown-menu-brands.show {
+      display: block;
+    }
+  }
+  
+
+  .row img{
+    margin: 0px;
+    padding: 0%;
+  }
+
+  

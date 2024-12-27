@@ -1,0 +1,96 @@
+
+.banner {
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 20px;
+ 
+  
+}
+
+.banner-image-container {
+  width: calc(100% - 40px); /* Adjust width to leave space on the sides */
+  margin: 0 auto; /* Center the container */
+  margin-bottom: 20px;
+  padding: 0 20px; /* Add padding to ensure a gap between image and container edges */
+  margin-top: 20px;
+
+}
+
+.banner-image,
+.banner-image2 {
+  display: block; /* Ensures proper centering */
+  margin: 0 auto; /* Centers the images inside the container */
+  width: 100%;
+  height: auto;
+}
+.savings{
+  margin-left: 38px;
+  margin-right: 38px;
+}
+
+
+.bannersingle-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.brands-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.brands-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.brands-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.brand-item {
+  transition: transform 0.3s;
+}
+
+.brand-item:hover {
+  transform: scale(1.05);
+}
+
+.brand-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (min-width: 1200px) {
+  .brands-images {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .brands-images {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 767px) {
+  .brands-images {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .banner-image2 {
+    margin-top: 20px;
+  }
+}

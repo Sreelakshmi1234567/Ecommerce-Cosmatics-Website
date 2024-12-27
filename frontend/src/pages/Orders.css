@@ -1,0 +1,74 @@
+.orders-container {
+ 
+  padding: 40px 15px;
+}
+
+.orders-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.orders-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.orders-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.orders-card h2 {
+  font-size: 1.5rem;
+  color: #ff69b4; /* Custom pink color for the order ID */
+  margin-bottom: 10px;
+}
+
+.orders-card h3 {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.orders-product {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.orders-product img {
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.orders-product-details p {
+  margin: 5px 0;
+}
+
+.orders-price {
+  color: #ff69b4; /* Custom pink color for the price */
+}
+
+.orders-product-details {
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .orders-product {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .orders-product img {
+    margin-bottom: 10px;
+    width: 80px;
+  }
+
+  .orders-card {
+    padding: 15px;
+  }
+}

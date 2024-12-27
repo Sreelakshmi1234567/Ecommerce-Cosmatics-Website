@@ -1,0 +1,125 @@
+
+.colorbaradmin-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.colorbaradmin-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+
+.colorbaradmin-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.colorbaradmin-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.colorbaradmin-button {
+    grid-column: span 2;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.colorbaradmin-button:hover {
+    background-color: #0056b3;
+}
+
+
+.colorbaradmin-product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.colorbaradmin-product-card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.colorbaradmin-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.colorbaradmin-product-image {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.colorbaradmin-product-name {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.colorbaradmin-product-mrp {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.colorbaradmin-product-discounted {
+    color: green;
+    font-weight: bold;
+}
+
+.colorbaradmin-product-discount {
+    color: red;
+    font-weight: bold;
+}
+
+.colorbaradmin-edit-button,
+.colorbaradmin-delete-button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.colorbaradmin-edit-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.colorbaradmin-edit-button:hover {
+    background-color: #0056b3;
+}
+
+.colorbaradmin-delete-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.colorbaradmin-delete-button:hover {
+    background-color: #a71d2a;
+}
